@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Kafka Delete Event</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>142df029-76b6-4946-bdd0-60293d601a0c</testCaseGuid>
+</TestCaseEntity>

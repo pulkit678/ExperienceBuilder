@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>AIP-Lgin</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>81fae0cc-eb09-4867-9182-6f78fdf4efe3</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d7a83ebe-5930-4d1f-a44f-5cc4c666a71f</id>
+      <masked>false</masked>
+      <name>Environment</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>0802e1f7-1b93-4bee-8795-dd87099711f7</id>
+      <masked>false</masked>
+      <name>Username</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>97b5ddbd-9719-4cc0-ba90-c2f0443dff30</id>
+      <masked>false</masked>
+      <name>Password</name>
+   </variable>
+</TestCaseEntity>

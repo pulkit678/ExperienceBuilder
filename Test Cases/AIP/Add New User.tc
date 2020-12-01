@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Add New User</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>eb0cdba1-97d1-4710-93e9-b0320909b000</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>512c7814-8cf8-4569-b914-13d18020fbaf</id>
+      <masked>false</masked>
+      <name>Username</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>31ff2333-87b8-476b-9444-50ae7cb7f93a</id>
+      <masked>false</masked>
+      <name>FirstName</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a1b37005-3e8e-4415-b615-3c17a1e5fa93</id>
+      <masked>false</masked>
+      <name>Surname</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b56ac9db-7297-4561-ab6f-e2fb6f3ec4fa</id>
+      <masked>false</masked>
+      <name>Emailaddress</name>
+   </variable>
+</TestCaseEntity>

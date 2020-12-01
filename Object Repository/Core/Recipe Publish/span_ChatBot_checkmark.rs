@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_ChatBot_checkmark</name>
+   <tag></tag>
+   <elementGuidId>7215a3f9-5bf4-4fd0-bfac-3da20f6007b9</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='newRecipeModal']/div/div/div[2]/form/div[2]/ul/div[2]/div[4]/li[4]/label/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>checkmark</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;newRecipeModal&quot;)/div[@class=&quot;modal-dialog modalAlignment&quot;]/div[@class=&quot;modal-content modalContentColor&quot;]/div[@class=&quot;modal-body&quot;]/form[@class=&quot;ng-valid ng-dirty ng-touched&quot;]/div[@class=&quot;form-group col-sm-12&quot;]/ul[1]/div[2]/div[@class=&quot;col-sm-3 newRecipeObject&quot;]/li[@class=&quot;newRecipeObjectListItems&quot;]/label[@class=&quot;container&quot;]/span[@class=&quot;checkmark&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='newRecipeModal']/div/div/div[2]/form/div[2]/ul/div[2]/div[4]/li[4]/label/span</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[4]/label/span</value>
+   </webElementXpaths>
+</WebElementEntity>
