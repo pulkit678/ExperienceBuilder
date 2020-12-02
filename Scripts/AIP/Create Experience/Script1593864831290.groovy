@@ -16,10 +16,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
 try {
-	WebUI.callTestCase(findTestCase('AIP/AIP-Lgin'), [:], FailureHandling.STOP_ON_FAILURE)
 	
-	WebUI.callTestCase(findTestCase('AIP/AIP Search Project and launch'), [:], FailureHandling.STOP_ON_FAILURE)
-
 	WebUI.click(findTestObject('Object Repository/Core/Experience/link_Experiences'))
 	
     WebUI.clearText(findTestObject('Core/Event Catalog/Search'), FailureHandling.STOP_ON_FAILURE)

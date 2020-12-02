@@ -17,10 +17,6 @@ import internal.GlobalVariable as GlobalVariable
 
 try {
 	
-	WebUI.callTestCase(findTestCase('AIP/AIP-Lgin'), [:], FailureHandling.STOP_ON_FAILURE)
-	
-	WebUI.callTestCase(findTestCase('AIP/AIP Search Project and launch'), [:], FailureHandling.STOP_ON_FAILURE)
-	
     WebUI.click(findTestObject('Core/Action Catalog/a_Action Catalog'))
 
     WebUI.clearText(findTestObject('Core/Event Catalog/Search'), FailureHandling.STOP_ON_FAILURE)

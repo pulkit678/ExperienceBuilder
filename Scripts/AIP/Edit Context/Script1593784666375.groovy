@@ -18,36 +18,32 @@ import internal.GlobalVariable as GlobalVariable
 try {
     WebUI.click(findTestObject('Core/Context Catalog/link_Context Catalog'))
 
-    WebUI.setText(findTestObject('Core/Event Catalog/Search'), 'context')
+    WebUI.setText(findTestObject('Core/Event Catalog/Search'), findTestData('Context').getValue(2, 1))
 
     WebUI.click(findTestObject('Core/Context Catalog/Context_Edit'))
 
-    WebUI.setText(findTestObject('Core/Context Catalog/Edit_heading'), 'context123')
+    WebUI.setText(findTestObject('Core/Context Catalog/Edit_Description'), findTestData('Context').getValue(3, 3))
 
-    WebUI.setText(findTestObject('Core/Context Catalog/Edit_Category'), 'kdjcdasd')
-
-    WebUI.setText(findTestObject('Core/Context Catalog/Edit_Description'), 'jdncjadfcsdc')
-
-    WebUI.setText(findTestObject('Core/Context Catalog/Edit_Logo Path'), 'jkkkdhcnsdfcds')
+ //   WebUI.setText(findTestObject('Core/Context Catalog/Edit_Logo Path'), 'jkkkdhcnsdfcds')
 
     WebUI.click(findTestObject('Core/Context Catalog/Edit_Next'))
 
-    WebUI.setText(findTestObject('Core/Context Catalog/edit_url'), 'https://sdfcds/jhgh')
+/*    WebUI.setText(findTestObject('Core/Context Catalog/edit_url'), 'https://sdfcds/jhgh')
 
     WebUI.setText(findTestObject('Core/Context Catalog/Edit_Query Parameters'), '{"dcds":"","":""}')
 
     WebUI.setText(findTestObject('Core/Context Catalog/Edit_resParam'), '{"":"","":""}')
-
+*/
     WebUI.click(findTestObject('Core/Context Catalog/Edit_Next - Copy'))
 
-    WebUI.setText(findTestObject('Core/Context Catalog/Edit_Configuration URL'), 'https://jdcbn/jghjh')
+ /*   WebUI.setText(findTestObject('Core/Context Catalog/Edit_Configuration URL'), 'https://jdcbn/jghjh')
 
     WebUI.selectOptionByValue(findTestObject('Core/Context Catalog/Edit_Configselect method'), 'POST', true)
 
     WebUI.setText(findTestObject('Core/Context Catalog/Edit_Configuration Request JSON Schema'), '{"sdczsd":"","":""}')
 
     WebUI.setText(findTestObject('Core/Context Catalog/Edit_Configuration Response JSON Schema'), '{"":"","":""}')
-
+*/
     WebUI.click(findTestObject('Core/Context Catalog/Edit_Previous'))
 
     WebUI.click(findTestObject('Core/Context Catalog/Edit_Previous'))
@@ -58,7 +54,7 @@ try {
 
     WebUI.click(findTestObject('Core/Context Catalog/Edit_Next - Copy'))
 
-    WebUI.setText(findTestObject('AIP/context/Adding_header text - Copy'), 'sjdkshkughjgj')
+ //   WebUI.setText(findTestObject('AIP/context/Adding_header text - Copy'), 'sjdkshkughjgj')
 
     WebUI.enhancedClick(findTestObject('Core/Context Catalog/button_Save - Copy'))
 

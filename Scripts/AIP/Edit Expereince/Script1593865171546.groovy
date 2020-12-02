@@ -18,19 +18,19 @@ import internal.GlobalVariable as GlobalVariable
 try {
     WebUI.click(findTestObject('Core/Experience/link_Experiences'))
 
-    WebUI.setText(findTestObject('Core/Event Catalog/Search'), 'echgfh')
+    WebUI.setText(findTestObject('Core/Event Catalog/Search'), findTestData('Experience').getValue(2,1))
 
     WebUI.click(findTestObject('Core/Experience/edit_experience'))
 
-    WebUI.setText(findTestObject('Core/Experience/edit_experienceName'), 'echgfhjkhgfc')
+//  WebUI.setText(findTestObject('Core/Experience/edit_experienceName'), 'echgfhjkhgfc')
 
-    WebUI.setText(findTestObject('Core/Experience/Edit_Description'), 'jkhgf')
+    WebUI.setText(findTestObject('Core/Experience/Edit_Description'), findTestData('Experience').getValue(2,5))
 
-    WebUI.setText(findTestObject('Core/Experience/Edit_engagements'), 'enghgjhghg')
+//    WebUI.setText(findTestObject('Core/Experience/Edit_engagements'), 'enghgjhghg')
 
-    WebUI.setText(findTestObject('Core/Experience/Edit_momentName1'), 'ugyjgjghhjgj')
+//    WebUI.setText(findTestObject('Core/Experience/Edit_momentName1'), 'ugyjgjghhjgj')
 
-    WebUI.setText(findTestObject('Core/Experience/Edit_momentName2'), 'kjhjgjghjg')
+//    WebUI.setText(findTestObject('Core/Experience/Edit_momentName2'), 'kjhjgjghjg')
 
     WebUI.enhancedClick(findTestObject('Core/Experience/Exp created successfully'))
 

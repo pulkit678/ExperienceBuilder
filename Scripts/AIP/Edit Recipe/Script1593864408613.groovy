@@ -18,13 +18,11 @@ import internal.GlobalVariable as GlobalVariable
 try {
     WebUI.click(findTestObject('Core/Recipe/li_RecipesAmazon Web ServicesS3LambdaStep F_09b7c4'))
 
-    WebUI.setText(findTestObject('Core/Event Catalog/Search'), 'Recipe')
+    WebUI.setText(findTestObject('Core/Event Catalog/Search'), findTestData('Recipe').getValue(2,1))
 
     WebUI.enhancedClick(findTestObject('Core/Recipe/img_dev_setting-logo'))
 
-    WebUI.setText(findTestObject('Core/Recipe/input_(max 35 chars)_editrecipename'), 'Recipe123')
-
-    WebUI.setText(findTestObject('Core/Recipe/input__editrecipedesc'), 'testing123')
+    WebUI.setText(findTestObject('Core/Recipe/input__editrecipedesc'), findTestData('Recipe').getValue(3,2))
 
     WebUI.waitForPageLoad(10)
 

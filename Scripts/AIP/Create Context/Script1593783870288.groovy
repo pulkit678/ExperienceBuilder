@@ -14,12 +14,14 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 
 try {
+	WebUI.callTestCase(findTestCase('AIP/AIP-Lgin'), [:], FailureHandling.STOP_ON_FAILURE)
 	
+	WebUI.callTestCase(findTestCase('AIP/AIP Search Project and launch'), [:], FailureHandling.STOP_ON_FAILURE)
+		
     WebUI.click(findTestObject('Core/Context Catalog/link_Context Catalog'))
-
-    WebUI.clearText(findTestObject('Core/Event Catalog/Search'), FailureHandling.STOP_ON_FAILURE)
 
     WebUI.click(findTestObject('Core/Context Catalog/New Context'))
 
@@ -43,11 +45,14 @@ try {
 
     WebUI.setText(findTestObject('Core/Context Catalog/Create_Configuration URL'), findTestData('Context').getValue(2, 10))
 
-    WebUI.selectOptionByValue(findTestObject('Core/Context Catalog/Create_Config select method'), findTestData('Context').getValue(2, 11), true)
+    WebUI.selectOptionByValue(findTestObject('Core/Context Catalog/Create_Config select method'), findTestData('Context').getValue(
+            2, 11), true)
 
-    WebUI.setText(findTestObject('Core/Context Catalog/Create_Configuration Request JSON Schema'), findTestData('Context').getValue(2, 12))
+    WebUI.setText(findTestObject('Core/Context Catalog/Create_Configuration Request JSON Schema'), findTestData('Context').getValue(
+            2, 12))
 
-    WebUI.setText(findTestObject('Core/Context Catalog/Create_Configuration Response JSON Schema'),findTestData('Context').getValue(2, 13))
+    WebUI.setText(findTestObject('Core/Context Catalog/Create_Configuration Response JSON Schema'), findTestData('Context').getValue(
+            2, 13))
 
     WebUI.click(findTestObject('Core/Context Catalog/button_Previous'))
 
@@ -59,10 +64,8 @@ try {
 
     WebUI.click(findTestObject('Core/Context Catalog/button_Next - Copy'))
 
-    WebUI.click(findTestObject('Core/Context Catalog/Add_Header'))
-
-    WebUI.setText(findTestObject('AIP/context/Adding_header text'), findTestData('Context').getValue(2, 14))
-
+	WebUI.click(findTestObject('Core/Context Catalog/button_Next - Copy'))
+	
     WebUI.click(findTestObject('Core/Context Catalog/button_Save'))
 
     WebUI.waitForPageLoad(30, FailureHandling.OPTIONAL)

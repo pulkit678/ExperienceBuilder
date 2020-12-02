@@ -18,43 +18,21 @@ import internal.GlobalVariable as GlobalVariable
 try {
     WebUI.enhancedClick(findTestObject('Core/Action Catalog/a_Action Catalog'))
 
-    WebUI.setText(findTestObject('Core/Event Catalog/Search'), 'Action')
+    WebUI.setText(findTestObject('Core/Event Catalog/Search'), findTestData('Action').getValue(2, 1))
 
     WebUI.click(findTestObject('Core/Action Catalog/Edit_btn'))
 
-    WebUI.setText(findTestObject('Core/Action Catalog/Edit_heading'), 'Action123')
+//    WebUI.setText(findTestObject('Core/Action Catalog/Edit_Category'), 'dhcjs133')
 
-    WebUI.setText(findTestObject('Core/Action Catalog/Edit_Category'), 'dhcjs133')
+    WebUI.setText(findTestObject('Core/Action Catalog/Edit_Description'), findTestData('Action').getValue(3,2))
 
-    WebUI.setText(findTestObject('Core/Action Catalog/Edit_Description'), 'udhuecf123')
-
-    WebUI.setText(findTestObject('Core/Action Catalog/Edit_Logo Path'), 'iedje1233')
+//    WebUI.setText(findTestObject('Core/Action Catalog/Edit_Logo Path'), '')
 
     WebUI.click(findTestObject('Core/Action Catalog/button_Next_1'))
 
-    WebUI.selectOptionByValue(findTestObject('Core/Action Catalog/Edit_Select URL Method'), 'Gateway URL', true)
-
-    WebUI.setText(findTestObject('Core/Action Catalog/Edit__url'), 'https://jhdjf23')
-
-    WebUI.selectOptionByValue(findTestObject('Core/Action Catalog/Edit_Request Method'), 'GET', true)
-
-    WebUI.setText(findTestObject('Core/Action Catalog/Edit_Request JSON Schema'), '{"SDFCD":"","":""}')
-
-    WebUI.setText(findTestObject('Core/Action Catalog/Edit__responseSchema'), '{"SFDCSD":"","":""}')
-
     WebUI.click(findTestObject('Core/Action Catalog/button_Next_1'))
 
-    WebUI.setText(findTestObject('Core/Action Catalog/Edit_Configuration URL'), 'https://jfdkfhcddf')
-
-    WebUI.setText(findTestObject('Core/Action Catalog/Edit_Configuration Request JSON Schema'), '{"dfcdc":"","":""}')
-
-    WebUI.setText(findTestObject('Core/Action Catalog/Edit_Configuration Response JSON'), '{"ADFC":"","":""}')
-
-    WebUI.selectOptionByValue(findTestObject('Core/Action Catalog/Edit_Config Request Method'), 'POST', true)
-
     WebUI.click(findTestObject('Core/Action Catalog/button_Next_1'))
-
-    WebUI.setText(findTestObject('AIP/Action/Edit_Adding header'), 'dsjkdhsjwsdef')
 
     WebUI.enhancedClick(findTestObject('AIP/Action/Edit_Save'))
 

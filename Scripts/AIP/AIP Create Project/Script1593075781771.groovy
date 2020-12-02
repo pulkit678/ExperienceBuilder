@@ -14,17 +14,20 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+
 
 try {
-    WebUI.enhancedClick(findTestObject('AIP/Project/NEW project btn'))
 
-    WebUI.setText(findTestObject('AIP/Project/Create_projectName'), 'autotest')
+    WebUI.click(findTestObject('AIP/Project/NEW project btn'))
 
-    WebUI.setText(findTestObject('AIP/Project/Create__projectDes'), 'autotest')
+    WebUI.setText(findTestObject('AIP/Project/Create_projectName'), findTestData('Project').getValue(2, 1))
 
-    WebUI.setText(findTestObject('AIP/Project/Create_projectLogo'), 'https://afdes')
+    WebUI.setText(findTestObject('AIP/Project/Create__projectDes'), findTestData('Project').getValue(2, 2))
 
-    WebUI.enhancedClick(findTestObject('AIP/Project/button_Save'))
+    WebUI.setText(findTestObject('AIP/Project/Create_projectLogo'), findTestData('Project').getValue(2, 3))
+
+    WebUI.click(findTestObject('AIP/Project/button_Save'))
 
     WebUI.waitForPageLoad(30, FailureHandling.OPTIONAL)
 

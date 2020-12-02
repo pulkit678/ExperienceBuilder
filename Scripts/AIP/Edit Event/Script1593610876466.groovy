@@ -18,19 +18,19 @@ import internal.GlobalVariable as GlobalVariable
 try {
     WebUI.enhancedClick(findTestObject('Core/Event Catalog/a_Event Catalog'))
 
-    WebUI.setText(findTestObject('Core/Event Catalog/Search'), 'test')
+    WebUI.setText(findTestObject('Core/Event Catalog/Search'), findTestData('Event').getValue(2, 1))
 
     WebUI.enhancedClick(findTestObject('Core/Event Catalog/Edit_btn'))
 
-    WebUI.setText(findTestObject('Core/Event Catalog/Edit_heading'), 'test123')
+/*    WebUI.setText(findTestObject('Core/Event Catalog/Edit_heading'), 'test123')
 
     WebUI.setText(findTestObject('Core/Event Catalog/Edit_category'), '')
 
     WebUI.setText(findTestObject('Core/Event Catalog/Edit_eventSchema'), '{"DGDF":""}')
+*/
+    WebUI.setText(findTestObject('Core/Event Catalog/Edit_Description'), findTestData('Event').getValue(3, 4) )
 
-    WebUI.setText(findTestObject('Core/Event Catalog/Edit_Description'), 'testing')
-
-    WebUI.setText(findTestObject('Core/Event Catalog/Edit_Logo Path'), '')
+ //   WebUI.setText(findTestObject('Core/Event Catalog/Edit_Logo Path'), '')
 
     WebUI.enhancedClick(findTestObject('Core/Event Catalog/Edit_Save'))
 
