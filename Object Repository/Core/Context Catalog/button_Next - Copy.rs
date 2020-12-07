@@ -6,10 +6,6 @@
    <elementGuidId>308a29c1-1a00-45c6-addf-de10cad0f369</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//button[@type='submit'])[6]</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
          <value>(//button[@type='submit'])[7][count(. | //*[(text() = '
 Next
@@ -20,6 +16,10 @@ Next
 ' or . = '
 Next
 ')])]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//button[@type='submit'])[6]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>

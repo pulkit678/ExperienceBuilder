@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 try {
     WebUI.click(findTestObject('Core/Experience/link_Experiences'))
 
-    WebUI.setText(findTestObject('Core/Event Catalog/Search'), findTestData('Experience').getValue(2,1))
+    WebUI.setText(findTestObject('Core/Event Catalog/Search'),findTestData('Experience').getValue(2,1))
 
     WebUI.click(findTestObject('Core/Experience/edit_experience'))
 

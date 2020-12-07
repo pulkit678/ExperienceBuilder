@@ -14,9 +14,13 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 
 try {
-	
+    WebUI.callTestCase(findTestCase('AIP/AIP-Lgin'), [('Environment') : '', ('Username') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
+
+    WebUI.callTestCase(findTestCase('AIP/AIP Search Project and launch'), [:], FailureHandling.STOP_ON_FAILURE)
+
     WebUI.click(findTestObject('Core/Action Catalog/a_Action Catalog'))
 
     WebUI.clearText(findTestObject('Core/Event Catalog/Search'), FailureHandling.STOP_ON_FAILURE)
@@ -33,11 +37,13 @@ try {
 
     WebUI.enhancedClick(findTestObject('AIP/Action/button_Next'))
 
-    WebUI.selectOptionByValue(findTestObject('Core/Action Catalog/Create_select URL Type'), findTestData('Action').getValue(2, 5), true)
+    WebUI.selectOptionByValue(findTestObject('Core/Action Catalog/Create_select URL Type'), findTestData('Action').getValue(
+            2, 5), true)
 
     WebUI.setText(findTestObject('Core/Action Catalog/Create__url'), findTestData('Action').getValue(2, 6))
 
-    WebUI.selectOptionByValue(findTestObject('Core/Action Catalog/Create_Select Method'), findTestData('Action').getValue(2, 7), true)
+    WebUI.selectOptionByValue(findTestObject('Core/Action Catalog/Create_Select Method'), findTestData('Action').getValue(
+            2, 7), true)
 
     WebUI.setText(findTestObject('Core/Action Catalog/Create__requestSchema'), findTestData('Action').getValue(2, 8))
 
@@ -47,11 +53,14 @@ try {
 
     WebUI.setText(findTestObject('Core/Action Catalog/Create_Configuration URL'), findTestData('Action').getValue(2, 10))
 
-    WebUI.selectOptionByValue(findTestObject('Core/Action Catalog/Create_Config Request Method'), findTestData('Action').getValue(2, 11), true)
+    WebUI.selectOptionByValue(findTestObject('Core/Action Catalog/Create_Config Request Method'), findTestData('Action').getValue(
+            2, 11), true)
 
-    WebUI.setText(findTestObject('Core/Action Catalog/Create_Configuration Request JSON Schema'), findTestData('Action').getValue(2, 12))
+    WebUI.setText(findTestObject('Core/Action Catalog/Create_Configuration Request JSON Schema'), findTestData('Action').getValue(
+            2, 12))
 
-    WebUI.setText(findTestObject('Core/Action Catalog/Create_Configuration Response JSON Schema'), findTestData('Action').getValue(2, 13))
+    WebUI.setText(findTestObject('Core/Action Catalog/Create_Configuration Response JSON Schema'), findTestData('Action').getValue(
+            2, 13))
 
     WebUI.enhancedClick(findTestObject('Core/Action Catalog/Create_button_Next_1'))
 

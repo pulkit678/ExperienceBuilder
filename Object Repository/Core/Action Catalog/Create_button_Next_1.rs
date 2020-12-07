@@ -7,14 +7,14 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>(//button[@type='submit'])[8]</value>
+         <value>(//button[@type='submit'])[9]</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@type='submit'])[7]</value>
+         <value>(//button[@type='submit'])[8]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -51,7 +51,7 @@ Next
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//button[@type='submit'])[8]</value>
+      <value>(//button[@type='submit'])[9]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

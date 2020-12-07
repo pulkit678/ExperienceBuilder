@@ -17,10 +17,7 @@ import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 
 try {
-	WebUI.callTestCase(findTestCase('AIP/AIP-Lgin'), [:], FailureHandling.STOP_ON_FAILURE)
-	
-	WebUI.callTestCase(findTestCase('AIP/AIP Search Project and launch'), [:], FailureHandling.STOP_ON_FAILURE)
-		
+
     WebUI.click(findTestObject('Core/Context Catalog/link_Context Catalog'))
 
     WebUI.click(findTestObject('Core/Context Catalog/New Context'))
@@ -43,7 +40,7 @@ try {
 
     WebUI.click(findTestObject('Core/Context Catalog/button_Next - Copy'))
 
-    WebUI.setText(findTestObject('Core/Context Catalog/Create_Configuration URL'), findTestData('Context').getValue(2, 10))
+    /*WebUI.setText(findTestObject('Core/Context Catalog/Create_Configuration URL'), findTestData('Context').getValue(2, 10))
 
     WebUI.selectOptionByValue(findTestObject('Core/Context Catalog/Create_Config select method'), findTestData('Context').getValue(
             2, 11), true)
@@ -60,11 +57,9 @@ try {
 
     WebUI.click(findTestObject('Core/Context Catalog/button_Next'))
 
-    WebUI.click(findTestObject('Core/Context Catalog/button_Next - Copy'))
-
-    WebUI.click(findTestObject('Core/Context Catalog/button_Next - Copy'))
-
-	WebUI.click(findTestObject('Core/Context Catalog/button_Next - Copy'))
+	WebUI.click(findTestObject('Core/Context Catalog/button_Next'))
+	*/
+	WebUI.click(findTestObject('Core/Context Catalog/button_Next'))
 	
     WebUI.click(findTestObject('Core/Context Catalog/button_Save'))
 
